@@ -1,0 +1,27 @@
+https://spring.io/guides/gs/consuming-web-service/
+
+https://www.baeldung.com/maven-wsdl-stubs
+
+********************************************************************
+
+https://www.youtube.com/watch?v=GLynmR08HxU
+
+▶️ Enlace al API que consumiremos:
+http://www.dneonline.com/calculator.asmx
+En la web, clicant al service Description, obtindrem el wsdl xml:
+http://www.dneonline.com/calculator.asmx?WSDL
+Lo que es fa amb un ws SOAP, es transformar el WSDL a classes java per poder així consumir el servei.
+
+▶️ Enlace al repositorio de GitHub:
+https://github.com/UnProgramadorNace/Spring-Boot-Soap-Maven
+
+********************************************************************
+
+tags per jaxws:wsimport:
+https://www.mojohaus.org/jaxws-maven-plugin/wsimport-mojo.html
+
+Annotations spring-framework
+https://www.geeksforgeeks.org/spring-framework-annotations/
+
+Annotations Spring-boot
+https://www.geeksforgeeks.org/spring-boot-annotations/
