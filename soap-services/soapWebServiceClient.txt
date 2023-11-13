@@ -6,7 +6,7 @@ https://www.baeldung.com/maven-wsdl-stubs
 
 https://www.youtube.com/watch?v=GLynmR08HxU
 
-VAIG PER MINUT 50 FINS TEST DEL COMMAND LINE RUNNER!!!!!
+VAIG PER MINUT 50 FINS TEST DEL COMMAND LINE RUNNER!!!!!!!
 
 ▶️ Enlace al API que consumiremos:
 http://www.dneonline.com/calculator.asmx
