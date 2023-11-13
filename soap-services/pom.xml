@@ -39,7 +39,6 @@
 				runtime</scope>
 			<optional>true</optional>
 		</dependency>
-
 		 <!--Llibreries afegide de stackoeverflow per error al compilar per test amb commandLinerunner-->
 		 <!--java.lang.ClassNotFoundException: com.sun.xml.bind.v2.Context-->
 		<dependency>
