@@ -21,32 +21,71 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>
+						org.springframework.boot</groupId>
+					<artifactId>
+						spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
+			<groupId>
+				org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
+			<scope>
+				runtime</scope>
 			<optional>true</optional>
 		</dependency>
+
+		 <!--Llibreries afegide de stackoeverflow per error al compilar per test amb commandLinerunner-->
+		 <!--java.lang.ClassNotFoundException: com.sun.xml.bind.v2.Context-->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.3.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.25.0-GA</version>
+		</dependency>
+		<!-- fi llibreries afegides de stackoverflow -->
+		
+		<dependency>
+			<groupId>
+				org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<scope>
+				test</scope>
 		</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
+				<groupId>
+					org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<!-- SPRING BOOT 2.7.17 -->
 			<plugin>
-				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<groupId>
+					org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
-				<version>0.15.3</version>
+				<version>
+					0.15.3</version>
 				<!--generara codi-->
 				<executions>
 					<execution>
@@ -57,17 +96,20 @@
 				</executions>
 				<!--configuracio per a la generacio de codi amb URL-->
 				<configuration>
-					<schemaLanguage>WSDL</schemaLanguage>
+					<schemaLanguage>
+						WSDL</schemaLanguage>
 					<generateDirectory>${project.basedir}/src/main/java</generateDirectory>
-					<generatePackage>com.soap.wsdl</generatePackage>
-				<!--Diem on es situal el wsdl que hem de consumir  -->
+					<generatePackage>
+						com.soap.wsdl</generatePackage>
+					<!--Diem on es situal el wsdl que hem de consumir  -->
 					<schemas>
 						<schema>
-							<url>http://www.dneonline.com/calculator.asmx?WSDL</url>
+							<url>
+								http://www.dneonline.com/calculator.asmx?WSDL</url>
 						</schema>
 					</schemas>
 				</configuration>
-				
+
 				<!--CONFIGURACIÓ per a la generacio de codi amb WSDL local en resources/wsdl -->
 				<!--
 				<configuration>
@@ -75,8 +117,8 @@
 					<generateDirectory>${project.basedir}/src/main/java</generateDirectory>
 					<generatePackage>com.soap.wsdl</generatePackage>
 					-->
-					<!--crear la carpeta dins de resources com a PACKAGE-->
-					<!--
+				<!--crear la carpeta dins de resources com a PACKAGE-->
+				<!--
 					<schemaDirectory>${project.basedir}/src/main/resources/wsdl</schemaDirectory>
 					<schemaIncludes>
 						<include>calculatorApi.wsdl</include>
