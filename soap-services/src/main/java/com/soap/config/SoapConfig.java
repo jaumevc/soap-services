@@ -23,7 +23,7 @@ public class SoapConfig {
 		SoapClient soapClient = new SoapClient();
 		
 		//lo mateix del location del webservice
-		soapClient.setDefaultUri("http://www.dneonline.com/calculator.asmx?WSDL");
+		soapClient.setDefaultUri("http://www.dneonline.com/calculator.asmx");
 		soapClient.setMarshaller(marshaller);
 		soapClient.setUnmarshaller(marshaller);
 		
