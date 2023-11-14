@@ -35,7 +35,7 @@ public class SoapClient extends WebServiceGatewaySupport{
 	}
 	
 	//Resta:
-	public SubtractResponse getSubstractResponse(int numA, int numB) {
+	public SubtractResponse getSubtractResponse(int numA, int numB) {
 		Subtract restaRequest = new Subtract();
 		restaRequest.setIntA(numA);
 		restaRequest.setIntB(numB);
