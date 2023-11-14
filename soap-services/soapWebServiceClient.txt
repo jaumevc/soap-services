@@ -4,9 +4,7 @@ https://www.baeldung.com/maven-wsdl-stubs
 
 ********************************************************************
 
-https://www.youtube.com/watch?v=GLynmR08HxU
-
-VAIG PER MINUT 56 FINS TEST DEL COMMAND LINE RUNNER!!!!!!!
+https://www.youtube.com/watch?v=GLynmR08HxU (per consumir amb postman)
 
 ▶️ Enlace al API que consumiremos:
 http://www.dneonline.com/calculator.asmx
@@ -17,6 +15,8 @@ Lo que es fa amb un ws SOAP, es transformar el WSDL a classes java per poder aix
 ▶️ Enlace al repositorio de GitHub:
 https://github.com/UnProgramadorNace/Spring-Boot-Soap-Maven
 
+********************************************************************
+https://www.youtube.com/watch?v=k6PUW_ScMK8 (per consumir amb soapui)
 ********************************************************************
 
 tags per jaxws:wsimport:
