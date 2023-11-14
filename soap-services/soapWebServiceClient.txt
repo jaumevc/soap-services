@@ -16,7 +16,8 @@ Lo que es fa amb un ws SOAP, es transformar el WSDL a classes java per poder aix
 https://github.com/UnProgramadorNace/Spring-Boot-Soap-Maven
 
 ********************************************************************
-https://www.youtube.com/watch?v=k6PUW_ScMK8 (per consumir amb soapui)
+https://www.youtube.com/watch?v=k6PUW_ScMK8 (per consumir amb soap-ui springboot 2.7.17 -jaxb2-)
+https://www.youtube.com/watch?v=S5hBIHxfaHk ((per consumir amb soap-ui springboot 3.0.6 -jakarta-)
 ********************************************************************
 
 tags per jaxws:wsimport:
