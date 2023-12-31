@@ -60,7 +60,7 @@ public class WsClient extends WebServiceGatewaySupport {
 		producte.setIntA(a);
 		producte.setIntB(b);
 
-		SoapActionCallback soapActCbk = new SoapActionCallback("http://tempuri.org/Divide");
+		SoapActionCallback soapActCbk = new SoapActionCallback("http://tempuri.org/Multiply");
 
 		MultiplyResponse resposta = (MultiplyResponse) getWebServiceTemplate()
 				.marshalSendAndReceive("http://www.dneonline.com/calculator.asmx", producte, soapActCbk);
